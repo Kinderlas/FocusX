@@ -339,6 +339,7 @@ bool FocusX::delete_subtask(const QString & str){
 }
 
 void FocusX::right_click_menu(const QPoint &pos){
+    update_from_db();
     QTreeWidgetItem *it = 0;
     it = tw_todolist->itemAt(pos);
     if(!it)
